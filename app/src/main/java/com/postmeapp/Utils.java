@@ -25,7 +25,7 @@ public class Utils {
             "rino.falzone@gmail.com:5a105e8b9d40e1329780d62ea2265d8a"
     };
 
-    public static String getTag(){ return "CartUlina";}
+    public static String getTag(){ return "PostMeApp";}
 
     public static String getDbFolder(Activity activity) { return Environment.getExternalStorageDirectory()
                                                 +"/"+activity.getString(R.string.dbfolder); }

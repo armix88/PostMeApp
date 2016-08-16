@@ -308,7 +308,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
             }
 
-            strCredential = retrieveCredentials(mEmail);
+            strCredential = Utils.retrieveCredentials(mActivity, mEmail);
 
             if(strCredential != null) {
                 String[] pieces = strCredential.split(":");
@@ -344,13 +344,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
         }
 
-        private String retrieveCredentials(String strUsername)
-        {
-            String strRet = null;
-            strRet = Utils.retrieveCredentials(mActivity, strUsername);
-
-            return strRet;
-        }
     }
 }
 

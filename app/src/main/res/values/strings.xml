@@ -23,7 +23,7 @@
 
     <!-- Database-->
     <string name="dbfolder">database/</string>
-    <string name="dbname">CartUlina.db</string>
+    <string name="dbname">PostMeApp.db</string>
     <string name="LocalDb">true</string>
 
 </resources>
