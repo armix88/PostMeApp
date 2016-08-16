@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/accent_material_dark">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/postcard_width_2"
+        android:layout_height="@dimen/postcard_height_2"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iPicture"
+            android:tag="iPicture"
+            android:src="@drawable/placeholder_10x15" />
+    </LinearLayout>
+
+</RelativeLayout>

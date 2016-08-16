@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/accent_material_dark">
+
+    <RelativeLayout
+        android:layout_width="@dimen/postcard_width_2"
+        android:layout_height="@dimen/postcard_height_2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="false"
+        android:id="@+id/PostcardBack"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:inputType="textPostalAddress"
+            android:ems="6"
+            android:id="@+id/txRecipient"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="Input Recipient"
+            android:layout_gravity="center"
+            android:textSize="@dimen/back_font"
+            android:layout_below="@+id/iStamp"
+            android:layout_toEndOf="@+id/view"
+            android:textIsSelectable="false"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/top_margin" />
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:inputType="textPostalAddress"
+            android:ems="9"
+            android:id="@+id/txAddress1"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="Input 1st Line Address"
+            android:layout_gravity="center"
+            android:textSize="@dimen/back_font"
+            android:layout_below="@+id/txRecipient"
+            android:layout_alignStart="@+id/txRecipient"
+            android:layout_marginTop="@dimen/top_margin" />
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:inputType="textPostalAddress"
+            android:ems="9"
+            android:id="@+id/txAddress2"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="Input 2st Line Address"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:textSize="@dimen/back_font"
+            android:layout_below="@+id/txAddress1"
+            android:layout_alignStart="@+id/txAddress1"
+            android:layout_marginTop="@dimen/top_margin" />
+
+        <EditText
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:inputType="textPostalAddress"
+            android:ems="9"
+            android:id="@+id/txCountry"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="Input Country"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:textSize="@dimen/back_font"
+            android:layout_below="@+id/txAddress2"
+            android:layout_alignStart="@+id/txAddress2"
+            android:layout_marginTop="@dimen/top_margin" />
+
+        <EditText
+            android:layout_width="110dp"
+            android:layout_height="@dimen/postcard_height_2"
+            android:id="@+id/txMessage"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="Input a Message"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="false"
+            android:textAlignment="viewStart"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/back_font"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toStartOf="@+id/view" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/iStamp"
+            android:src="@drawable/francobollo"
+            android:textAlignment="viewEnd"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/view"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
